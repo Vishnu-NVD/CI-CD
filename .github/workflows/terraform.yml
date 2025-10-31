@@ -14,10 +14,6 @@ jobs:
       GENESYSCLOUD_OAUTHCLIENT_SECRET: ${{ secrets.GENESYSCLOUD_OAUTHCLIENT_SECRET }}
       GENESYSCLOUD_REGION: ${{ secrets.GENESYSCLOUD_REGION }}
 
-    defaults:
-      run:
-        working-directory: ./cxacode
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -29,6 +25,9 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
+
+      - name: Terraform Validate
+        run: terraform validate
 
       - name: Terraform Plan
         run: terraform plan -no-color
