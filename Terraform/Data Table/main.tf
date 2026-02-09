@@ -4,7 +4,7 @@ cloud {
     organization = "Genesys_Cloud" 
 
     workspaces { 
-      name = "User" 
+      name = "Data_Table" 
     } 
   } 
   required_providers {
@@ -16,4 +16,3 @@ cloud {
  }
 
 provider "genesyscloud" {}
-
