@@ -4,7 +4,7 @@ resource "genesyscloud_user" "example_user" {
   state           = "active"
   department      = "Development"
   title           = "Senior Director"
-  manager         = Rajesh
+  manager         = "Rajesh"
   acd_auto_answer = true
   profile_skills  = ["Java", "Go"]
   certifications  = ["Certified Developer"]
