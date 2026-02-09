@@ -58,9 +58,4 @@ resource "genesyscloud_user" "example_user" {
   }
 }
 
-resource "genesyscloud_user" "example_user2" {
-  email = "bobby@servion.com"
-  name  = "Bobby Drop Tables"
-  title = "CEO"
-  state = "active"
-}
+
