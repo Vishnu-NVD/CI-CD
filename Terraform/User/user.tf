@@ -1,6 +1,6 @@
-resource "genesyscloud_user" "example_user" {
-  email           = "johnny@servion.com"
-  name            = "Johnny Doe"
+resource "genesyscloud_user" "Jack" {
+  email           = "jack.sparrow@servion.com"
+  name            = "Jack Sparrow"
   state           = "active"
   department      = "Development"
   title           = "Senior Director"
@@ -10,7 +10,7 @@ resource "genesyscloud_user" "example_user" {
   certifications  = ["Certified Developer"]
   addresses {
     other_emails {
-      address = "john@gmail.com"
+      address = "jack@gmail.com"
       type    = "HOME"
     }
     phone_numbers {
@@ -25,7 +25,7 @@ resource "genesyscloud_user" "example_user" {
     notes       = "Office 201"
   }
   employer_info {
-    official_name = "Jonathon Doe"
+    official_name = "Jack Sparrow"
     employee_id   = "12345"
     employee_type = "Full-time"
     date_hire     = "2021-03-18"
