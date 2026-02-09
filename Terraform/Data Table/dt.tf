@@ -22,3 +22,4 @@ resource "genesyscloud_architect_datatable" "customers_3" {
     title = "Last Name"
   }
 }
+
