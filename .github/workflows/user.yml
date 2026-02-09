@@ -1,9 +1,9 @@
-name: "Terraform Modular Deployment"
+name: "User Modular Deployment"
 
 on:
   push:
     branches:
-      - main
+      - main_user
     paths:
       - 'Terraform/**'
   workflow_dispatch:
