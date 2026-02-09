@@ -7,3 +7,4 @@ resource "genesyscloud_architect_datatable_row" "john-smith" {
     "vip"        = true
   })
 }
+
