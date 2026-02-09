@@ -1,6 +1,5 @@
 resource "genesyscloud_architect_datatable" "customers" {
   name        = "CI/CD_Customers"
-  division_id = data.genesyscloud_auth_division_home.home.id
   description = "Table of Customers"
   properties {
     name  = "key"
