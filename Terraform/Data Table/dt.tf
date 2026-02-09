@@ -1,5 +1,5 @@
 resource "genesyscloud_architect_datatable" "customers" {
-  name        = "CI/CD_Customers"
+  name        = "CI/CD_Customers_List"
   description = "Table of Customers"
   properties {
     name  = "key"
@@ -7,25 +7,19 @@ resource "genesyscloud_architect_datatable" "customers" {
     title = "Email"
   }
   properties {
-    name  = "identifier"
+    name  = "id"
     type  = "integer"
-    title = "Customer Identifier"
+    title = "Customer ID"
   }
   properties {
-    name    = "deleted"
-    type    = "boolean"
-    title   = "Is Deleted"
-    default = "false"
-  }
-  properties {
-    name  = "address"
+    name  = "First"
     type  = "string"
-    title = "Address"
+    title = "First Name"
   }
   properties {
-    name  = "vip"
-    type  = "boolean"
-    title = "VIP"
+    name  = "Last"
+    type  = "string"
+    title = "Last Name"
   }
 }
 
