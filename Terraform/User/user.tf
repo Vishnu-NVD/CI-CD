@@ -1,16 +1,15 @@
-resource "genesyscloud_user" "Jack" {
-  email           = "jack.sparrow@servion.com"
-  name            = "Jack Sparrow"
+resource "genesyscloud_user" "Joe" {
+  email           = "joe.root@servion.com"
+  name            = "Joe Root"
   state           = "active"
   department      = "Development"
   title           = "Senior Director"
-  manager         = "Rajesh"
   acd_auto_answer = true
   profile_skills  = ["Java", "Go"]
   certifications  = ["Certified Developer"]
   addresses {
     other_emails {
-      address = "jack@gmail.com"
+      address = "joe@gmail.com"
       type    = "HOME"
     }
     phone_numbers {
@@ -25,7 +24,7 @@ resource "genesyscloud_user" "Jack" {
     notes       = "Office 201"
   }
   employer_info {
-    official_name = "Jack Sparrow"
+    official_name = "Joe Root"
     employee_id   = "12345"
     employee_type = "Full-time"
     date_hire     = "2021-03-18"
